@@ -13,9 +13,9 @@ body {
     width: 550px;
     height: 220px;
     background-image:url('realopensign.png');
-    position: absolute;
-    bottom: -100%;
-    left: 37.5%;
+    position: fixed;
+    bottom: -100%; right:-100%; left:-100%;
+    margin: auto;
     animation: anim 2s forwards, anim2 2s forwards 3s;
 }
 #box1:after{
@@ -24,7 +24,7 @@ body {
     width: 550px;
     height: 220px;
     background-image:url('realopensign.png');
-    left: 0px;
+    left: 0%;
     z-index: -1;
 }
 @keyframes anim{
@@ -38,13 +38,13 @@ body {
 } 
 @keyframes anim2 {
     from{
-        left:37.5%;
+        left:-100%;
         width:460px;
 
     }
     to{
         width:0px;
-        left: 60%
+        left: -80%;
     }
     
 }
@@ -53,7 +53,7 @@ body {
     height: auto;
     font-family: 'Bahnschrift Condensed';
     color:white;
-    font-size: 7em;
+    font-size: 6vmax;
     font-weight: 400;
     position: absolute;
     top: 250px;
