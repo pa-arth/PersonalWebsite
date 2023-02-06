@@ -1,52 +1,46 @@
 body {
     margin: 0px;
-    background: black;
 
+    height: 500vh;
 }
+.volumebutton {
+    z-index: 2;
+    position: relative;
+    bottom: 100px;
+    right: 350px;
+    z-index: 1;
+}
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    z-index: -1;
+  }
+  #video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%;
+    filter: grayscale(); 
+  
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+  
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
 #main {
     width: 100%;
     height: 100%;
     position: absolute;
     overflow: hidden;
-}
-#box1{
-    width: 550px;
-    height: 220px;
-    background-image:url('realopensign.png');
-    position: fixed;
-    bottom: -100%; right:-100%; left:-100%;
-    margin: auto;
-    animation: anim 2s forwards, anim2 2s forwards 3s;
-}
-#box1:after{
-    content: '';
-    position: absolute;
-    width: 550px;
-    height: 220px;
-    background-image:url('realopensign.png');
-    left: 0%;
-    z-index: -1;
-}
-@keyframes anim{
-    from{
-        bottom: -100%;
-
-    }
-    to{
-        bottom: 10%;
-    }
-} 
-@keyframes anim2 {
-    from{
-        left:-100%;
-        width:460px;
-
-    }
-    to{
-        width:0px;
-        left: -80%;
-    }
-    
 }
 #box2{
     width:auto;
@@ -63,7 +57,7 @@ body {
 #text{
     position: relative;
     left: -100%;
-    animation: anim3 2s forwards 3s;
+    animation: anim3 forwards 3s;
 }
 @keyframes anim3{
     from{
@@ -75,12 +69,22 @@ body {
 }
 #box3{
     overflow: hidden;
+
 }
 #container{
     width:100%;
     position:absolute;
     top:-100%;
-    animation: anim4 2s forwards 2.5s;
+    animation: anim4 forwards 2.5s;
+    opacity: 1;
+}
+@keyframes anim4 {
+    from{
+        top: -100%;
+    }
+    to{
+        top: 0%;
+    }
 }
 #logo{
     float:left;
@@ -108,12 +112,9 @@ body {
 #nav ul li{
     display: inline-block;
     margin-left:100px;
+    text-decoration: none;
 }
-@keyframes anim4 {
-    from{
-        top: -100%;
-    }
-    to{
-        top: 0%;
-    }
+a {
+    text-decoration: none;
+    color: white;
 }

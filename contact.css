@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+body {
+    gap: 500px;
+    position: relative;
+}
+.phoneinfo {
+    gap: 15px;
+}

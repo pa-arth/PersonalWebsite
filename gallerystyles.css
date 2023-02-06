@@ -1,0 +1,52 @@
+.gallerytop {
+    display: flex;
+    gap: 16px;
+}
+.gallerybottom {
+    display: flex;
+    gap: 16px;
+}
+#logo{
+    float:left;
+    margin-left:100px;
+    margin-top: 20px;
+    font-family: 'Snell Roundhand';
+    color: white;
+    font-size: 20px;
+}
+
+#nav{
+    font-family: 'Bahnschrift Condensed';
+    font-size:14px;
+    color:white;
+    letter-spacing: 2px;
+    margin-right: 150px;
+    margin-top: 20px;
+    float:right;
+
+}
+#nav ul{
+    list-style: none;
+
+}
+#nav ul li{
+    display: inline-block;
+    margin-left:100px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.gallerytop img {
+    width: 100%;
+    height: auto;
+}
+.gallerybottom img {
+    width: 100%;
+    height: auto;
+}
+#gallery {
+    width: 800px;
+    height: 1000px;
+}
