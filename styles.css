@@ -3,13 +3,26 @@ body {
 
     height: 500vh;
 }
-.volumebutton {
+#volumebutton {
+    width: 4.5em;
+    height: 4.5em;
     z-index: 2;
-    position: relative;
-    bottom: 100px;
-    right: 350px;
+    border-radius: 2.2em;
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
     z-index: 1;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(155, 176, 201);
+    color: white;
+    visibility: visible;
 }
+
+#volumebutton .on {
+    display: none;
+}
+
 .video-container {
     position: absolute;
     top: 0;
@@ -75,8 +88,9 @@ body {
     width:100%;
     position:absolute;
     top:-100%;
-    animation: anim4 forwards 2.5s;
-    opacity: 1;
+    animation: anim4 forwards 2s;
+    background: rgba(0,0,0,.3);
+
 }
 @keyframes anim4 {
     from{
@@ -93,6 +107,7 @@ body {
     font-family: 'Snell Roundhand';
     color: white;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 #nav{
@@ -103,7 +118,6 @@ body {
     margin-right: 150px;
     margin-top: 20px;
     float:right;
-
 }
 #nav ul{
     list-style: none;
