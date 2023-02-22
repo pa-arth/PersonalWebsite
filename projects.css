@@ -1,4 +1,37 @@
-#main {
-    display: block;
+body {
     gap: 90px;
+    background-color: black;
+}
+#logo{
+    float:left;
+    margin-left:100px;
+    margin-top: 20px;
+    font-family: 'Snell Roundhand';
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#nav{
+    font-family: 'Bahnschrift Condensed';
+    font-size:14px;
+    color:white;
+    letter-spacing: 2px;
+    margin-right: 150px;
+    margin-top: 20px;
+    float:right;
+    top: 0%;
+}
+#nav ul{
+    list-style: none;
+}
+#nav ul li{
+    display: inline-block;
+    margin-left:100px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }

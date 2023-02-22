@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-
+    background-color: black;
     height: 500vh;
 }
 #volumebutton {
@@ -54,6 +54,7 @@ body {
     height: 100%;
     position: absolute;
     overflow: hidden;
+    
 }
 #box2{
     width:auto;
@@ -80,16 +81,14 @@ body {
         left:0%;
     }
 }
-#box3{
-    overflow: hidden;
 
-}
 #container{
     width:100%;
     position:absolute;
     top:-100%;
     animation: anim4 forwards 2s;
     background: rgba(0,0,0,.3);
+    overflow: hidden;
 
 }
 @keyframes anim4 {
@@ -111,6 +110,7 @@ body {
 }
 
 #nav{
+    display: flex;
     font-family: 'Bahnschrift Condensed';
     font-size:14px;
     color:white;
