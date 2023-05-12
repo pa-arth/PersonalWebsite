@@ -44,7 +44,14 @@ a {
     border-radius: 1em;
     animation: anim forwards 2s;
     position: relative;
- 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    text-align: center;
+
+}
+.xc ul {
+    list-style-type: none;
+    padding: 20px;
 }
 
 
